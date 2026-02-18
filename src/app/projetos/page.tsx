@@ -208,8 +208,8 @@ export default function ProjetosPage() {
                                         type="button"
                                         onClick={() => setSelectedEmoji(emoji)}
                                         className={`text-2xl p-1.5 rounded-lg transition-all ${selectedEmoji === emoji
-                                                ? 'bg-blue-500/20 ring-2 ring-blue-500 scale-110'
-                                                : 'hover:bg-white/5'
+                                            ? 'bg-blue-500/20 ring-2 ring-blue-500 scale-110'
+                                            : 'hover:bg-white/5'
                                             }`}
                                     >
                                         {emoji}
@@ -226,12 +226,12 @@ export default function ProjetosPage() {
                                         type="button"
                                         onClick={() => setSelectedColor(color)}
                                         className={`h-8 w-8 rounded-full transition-all ${selectedColor === color
-                                                ? 'ring-2 ring-offset-2 ring-offset-background scale-110'
-                                                : 'hover:scale-105'
+                                            ? 'ring-2 ring-offset-2 ring-offset-background scale-110'
+                                            : 'hover:scale-105'
                                             }`}
                                         style={{
                                             backgroundColor: color,
-                                            ringColor: color,
+                                            ['--tw-ring-color' as string]: color,
                                         }}
                                     />
                                 ))}
